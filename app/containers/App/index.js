@@ -12,6 +12,8 @@ import styled from 'styled-components';
 import { Switch, Route } from 'react-router-dom';
 
 import HomePage from 'containers/HomePage/Loadable';
+import FetchDataFromEndPoint from 'containers/Fetchdatafromendpoint/Loadable';
+import Taskcontainer from 'containers/Taskcontainer/Loadable'
 import FeaturePage from 'containers/FeaturePage/Loadable';
 import NotFoundPage from 'containers/NotFoundPage/Loadable';
 import Header from 'components/Header';
@@ -41,6 +43,8 @@ export default function App() {
       <Switch>
         <Route exact path="/" component={HomePage} />
         <Route path="/features" component={FeaturePage} />
+        <Route path="/fetch" component={FetchDataFromEndPoint} />
+        <Route path="/task" component={Taskcontainer} />
         <Route path="" component={NotFoundPage} />
       </Switch>
       <Footer />
