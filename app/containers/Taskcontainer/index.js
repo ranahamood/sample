@@ -23,6 +23,7 @@ import Task2 from '../../components/Task2/index';
 import Task3 from '../../components/Task3/index';
 import Task4 from '../../components/Task4/index';
 import Task5 from '../../components/Task5/index';
+import Task6 from '../../components/Task6/index';
 import Button from 'react-bootstrap/Button';
 // import 'bootstrap/dist/css/bootstrap.min.css';
 import ProgressBar from '../../components/ProgressBar';
@@ -60,7 +61,8 @@ export function Taskcontainer() {
           :count === 2 ? <Task2/>
           :count === 3 ? <Task3/>
           :count === 4 ? <Task4/>
-          :<Task5/>
+          :count === 5 ? <Task5/>
+          :<Task6/>
       )
       }
       <Button onClick={() => setCount(count - 1)}>Previous</Button>

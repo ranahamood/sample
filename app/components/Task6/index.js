@@ -14,7 +14,7 @@ import messages from './messages';
 function Task6() {
   return (
     <div>
-      <h1> This is the dev branch component 6 </h1>
+      <h1>This is dev branch task6 </h1>
     </div>
   );
 }
